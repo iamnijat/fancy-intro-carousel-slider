@@ -129,7 +129,7 @@ class FancyIntroCarouselSliderScreen extends StatelessWidget {
 
 </td>
 <td>
-<img  src="https://user-images.githubusercontent.com/53579386/126896556-911d4778-04cd-49bf-b32a-01a6eb3b0155.jpeg"  alt="">
+<img  src="https://user-images.githubusercontent.com/42466886/191514873-19b79572-f51c-42ba-9f72-078c071cbe92.png"  alt="">
 </td>
 </tr>
 </table>
