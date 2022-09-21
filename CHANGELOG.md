@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+Added files with modifiable items, dotHeight, activeDot, disabledDot and more properties and updated ReadMe.
