@@ -1,3 +1,7 @@
+// Copyright 2022 The Flutter Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
 import 'dart:async';
 
 import 'package:flutter/gestures.dart';
@@ -27,23 +31,58 @@ class FancyIntroCarouselSlider extends StatefulWidget {
     this.padEnds = true,
   });
 
+  /// Used to define carousel items in [PageView.builder]
   final List<Widget> items;
+
+  /// Used to define dot height in slider dots with [double]
   final double dotHeight;
+
+  /// Used for defining activeDot [Widget]
   final Widget activeDot;
+
+  /// Used for defining disabledDot [Widget]
   final Widget disabledDot;
+
+  /// Used for assigning innerPadding between slider dots with [EdgeInsetsGeometry]
   final EdgeInsetsGeometry innerPadding;
+
+  /// Used for assigning action button in the last page of slider [Widget]
   final Widget actionButton;
+
+  /// Optional to use for uniqueness [Key]
   final Key? sliderKey;
+
+  /// Implemented [PageController] to apply logic for switching pages
   final PageController pageController;
+
+  /// Optional to change scrollDirection of [PageView.builder]
   final Axis scrollDirection;
+
+  /// Optional to change reverse parameter of [PageView.builder]
   final bool reverse;
+
+  /// Used for assigning pyhsics to [PageView.builder]
   final ScrollPhysics? physics;
+
+  /// Optional to change pageSnapping parameter of [PageView.builder]
   final bool pageSnapping;
+
+  /// Optional to change [DragStartBehavior] parameter of [PageView.builder]
   final DragStartBehavior dragStartBehavior;
+
+  /// Optional to change allowImplicitScrolling parameter of [PageView.builder]
   final bool allowImplicitScrolling;
+
+  /// Used for assigning restorationId to [PageView.builder]
   final String? restorationId;
+
+  /// Optional to change clipBehavior [Clip] parameter of [PageView.builder]
   final Clip clipBehavior;
+
+  /// Used for assigning [ScrollBehavior] to [PageView.builder]
   final ScrollBehavior? scrollBehavior;
+
+  /// Optional to change padEnds parameter of [PageView.builder]
   final bool padEnds;
 
   @override
@@ -96,7 +135,7 @@ class _FancyIntroCarouselSliderState extends State<FancyIntroCarouselSlider> {
         itemCount: widget.items.length,
         itemBuilder: (ctx, i) => FancyIntroCarouselSliderItem(
               item: widget.items[i],
-              slidersCount: widget.items.length,
+              itemCount: widget.items.length,
               pageindexStream: _pageIndexStream.stream,
               disabledDot: widget.disabledDot,
               activeDot: widget.activeDot,

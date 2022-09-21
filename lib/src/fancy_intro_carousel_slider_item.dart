@@ -2,18 +2,10 @@ import 'package:flutter/material.dart';
 import 'fancy_intro_carousel_slider_dots.dart';
 
 class FancyIntroCarouselSliderItem extends StatelessWidget {
-  final Widget item;
-  final int slidersCount;
-  final Stream<int> pageindexStream;
-  final double dotHeight;
-  final Widget activeDot;
-  final Widget disabledDot;
-  final EdgeInsetsGeometry innerPadding;
-  final Widget actionButton;
   const FancyIntroCarouselSliderItem({
     super.key,
     required this.item,
-    required this.slidersCount,
+    required this.itemCount,
     required this.pageindexStream,
     required this.dotHeight,
     required this.activeDot,
@@ -21,6 +13,30 @@ class FancyIntroCarouselSliderItem extends StatelessWidget {
     required this.innerPadding,
     required this.actionButton,
   });
+
+  /// Used for defining single item to [PageView.builder]
+  final Widget item;
+
+  /// Defined itemCount with [int]
+  final int itemCount;
+
+  /// Implemented pageIndexStream for changing page indexes [Stream]
+  final Stream<int> pageindexStream;
+
+  /// Used to define dot height in slider dots with [double]
+  final double dotHeight;
+
+  /// Used for defining activeDot [Widget]
+  final Widget activeDot;
+
+  /// Used for defining disabledDot [Widget]
+  final Widget disabledDot;
+
+  /// Used for assigning innerPadding between slider dots with [EdgeInsetsGeometry]
+  final EdgeInsetsGeometry innerPadding;
+
+  /// Used for assigning action button in the last page of slider [Widget]
+  final Widget actionButton;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +48,7 @@ class FancyIntroCarouselSliderItem extends StatelessWidget {
             stream: pageindexStream,
             builder: (context, snapshot) {
               final pageIndex = snapshot.data ?? 0;
-              final lastIndex = slidersCount - 1;
+              final lastIndex = itemCount - 1;
               return Column(
                 children: <Widget>[
                   AnimatedOpacity(
@@ -43,7 +59,7 @@ class FancyIntroCarouselSliderItem extends StatelessWidget {
                     dotHeight: dotHeight,
                     currentPage: pageIndex,
                     innerPadding: innerPadding,
-                    sliderListLength: slidersCount,
+                    itemCount: itemCount,
                     activeDot: activeDot,
                     disabledDot: disabledDot,
                   ),
