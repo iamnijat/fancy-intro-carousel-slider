@@ -1,4 +1,5 @@
-// Copyright 2022 The Flutter Authors. All rights reserved.
+// BSD 3-Clause License
+// Copyright (c) 2022, Nijat Namazzade
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
