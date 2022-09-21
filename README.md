@@ -136,6 +136,6 @@ class FancyIntroCarouselSliderScreen extends StatelessWidget {
 
 ## Next Goals
  
- - [x] Add animational behaviors to the properties.
+ - [ ] Add animational behaviors to the properties.
  
- - [x] Add more functionalities to the package.
+ - [ ] Add more functionalities to the package.
