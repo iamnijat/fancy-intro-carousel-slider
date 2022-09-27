@@ -8,7 +8,7 @@ Fancy Intro Carousel Slider package lets you add beautiful intro sliders to your
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  fancy_intro_carousel_slider: ^0.0.2
+  fancy_intro_carousel_slider: ^0.0.3
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
