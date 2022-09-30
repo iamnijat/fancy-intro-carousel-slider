@@ -38,7 +38,7 @@ There are a number of properties that you can modify:
 <td>
 
 ```dart
-class FancyIntroCarouselSliderScreen extends StatelessWidget {  
+class FancyIntroCarouselSliderScreen extends StatelessWidget {                                                                                      
   const FancyIntroCarouselSliderScreen({Key? key}) : super(key: key);  
   
   @override  
