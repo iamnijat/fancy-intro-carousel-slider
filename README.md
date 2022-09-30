@@ -34,7 +34,7 @@ There are a number of properties that you can modify:
 
 <table>
 <tr>
-<td display="block", width= "100%">
+<td>
 
 ```dart
 class FancyIntroCarouselSliderScreen extends StatelessWidget {  
@@ -133,7 +133,7 @@ class FancyIntroCarouselSliderScreen extends StatelessWidget {
   
   <td> 
     
-    <img  src="https://user-images.githubusercontent.com/42466886/191514873-19b79572-f51c-42ba-9f72-078c071cbe92.png" alt="">
+    <img src="https://user-images.githubusercontent.com/42466886/191514873-19b79572-f51c-42ba-9f72-078c071cbe92.png" alt="">
   </td>
 
 </tr>
