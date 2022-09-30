@@ -1,7 +1,7 @@
 
 # Fancy Intro Carousel Slider
 
-<img  src="https://user-images.githubusercontent.com/42466886/191514873-19b79572-f51c-42ba-9f72-078c071cbe92.png", height="200", width: "200",  alt="">
+<img  src="https://user-images.githubusercontent.com/42466886/191514873-19b79572-f51c-42ba-9f72-078c071cbe92.png", height="200", width="200",  alt="">
 
 Fancy Intro Carousel Slider package lets you add beautiful intro sliders to your Flutter app.
 
