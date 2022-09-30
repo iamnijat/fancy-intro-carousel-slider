@@ -1,6 +1,7 @@
 
 # Fancy Intro Carousel Slider
 
+![Cover](https://user-images.githubusercontent.com/42466886/193230556-3dffa02d-22d8-4838-9081-67165129d8c3.png)
 
 
 Fancy Intro Carousel Slider package lets you add beautiful intro sliders to your Flutter app.
@@ -130,11 +131,6 @@ class FancyIntroCarouselSliderScreen extends StatelessWidget {
 ```
 
 </td>
-  
-  <td> 
-    
-    <img src="https://user-images.githubusercontent.com/42466886/191514873-19b79572-f51c-42ba-9f72-078c071cbe92.png" alt="">
-  </td>
 
 </tr>
 </table>
